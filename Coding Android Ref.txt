@@ -1,0 +1,28 @@
+android:background="#006699"> 	//changes color of background
+import android.util.Log; 	//lets us print out log information
+android:width="490dp"/> //for setting width of a widget
+~~~~~~~~~~~~~~~
+import android.widget.RelativeLayout; //imports layout type
+import android.widget.Button; //imports button widget
+
+
+  RelativeLayout TestLayout = new RelativeLayout(this); //creates layout
+
+  Button RedButton = new Button(this); //creates a button
+
+  TestLayout.addView(RedButton); //adds the button to the layout
+  setContentView(TestLayout);	//displays the layout
+~~~~~~~~~~~~~~~
+import android.graphics.Color; //lets you use color as a property
+~~~~~~~~~~~~~~~
+  RelativeLayout.LayoutParams forButton = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WRAP_CONTENT,
+                    RelativeLayout.LayoutParams.WRAP_CONTENT        );
+//For getting the height and width of the content in the Layout instead of putting in fixed values.
+
+	forButton.addRule(RelativeLayout.CENTER_HORIZONTAL); //sets button horizontally and vertically in the middle.
+        forButton.addRule(RelativeLayout.CENTER_VERTICAL);
+~~~~~~~~~~~~~~~
+//Setting ID
+
+RedButton.setId(1);
